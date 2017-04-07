@@ -88,7 +88,9 @@ public class FileManager {
 					usersList.add(p);
 					linea = br.readLine();
 				}else{
+					System.out.println("---------------------------------------------------------------");
 					System.out.println("ERRORE: ci sono dei record che non hanno 6 colonne");
+					break;
 				}
 			}
 		}catch(IOException e){
