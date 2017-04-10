@@ -45,6 +45,18 @@ public class Main {
 					file.over18year(scan);
 					printMsg();
 					break;
+				case "7":
+					file.over18yearName(scan);
+					printMsg();
+					break;
+				case "8":
+					file.showAddress(scan);
+					printMsg();
+					break;
+				case "9":
+					file.showPrettyPerson(scan);
+					printMsg();
+					break;
 				default:
 					System.out.println("---------------------------------------------------------------");
 					System.out.println("Comando non riconosciuto, scegli uno dei seguenti comandi");
@@ -67,6 +79,9 @@ public class Main {
 		System.out.println("  4 -> Lista degli utenti con nome ricorrente all'interno del file");
 		System.out.println("  5 -> Lista dei prefissi telefonici ripetuti più volte");
 		System.out.println("  6 -> Visualizza il numero degli utenti maggiorenni");
+		System.out.println("  7 -> Visualizza il nome e il cognome degli utenti maggiorenni");
+		System.out.println("  8 -> Visualizza gli indirizzi");
+		System.out.println("  9 -> Visualizza le persone con i relativi dati (testo formattato)");
 		System.out.println("  q -> Termina il programma");
 	}
 }
